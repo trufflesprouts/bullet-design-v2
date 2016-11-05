@@ -9,7 +9,7 @@
   font-size: 18px;
 }
 
-.sec-1-bottom, .sec-1-bottom > div {
+.sec-1-bottom, .sec-1-bottom>div {
   padding: 0;
 }
 
@@ -21,7 +21,7 @@
   .sec-1-top h1 {
     font-size: 60px;
   }
-  .sec-1-bottom, .sec-1-bottom > div {
+  .sec-1-bottom, .sec-1-bottom>div {
     padding: inherit;
   }
 }
@@ -43,7 +43,7 @@
   .sec-2-cols:nth-child(-n+2) {
     padding-right: 0;
   }
-  .sec-2-cols ~ .sec-2-cols {
+  .sec-2-cols~.sec-2-cols {
     padding-left: 0;
   }
 }
@@ -69,7 +69,7 @@
   padding: 0 30px;
 }
 
-.iconSDP > div {
+.iconSDP>div {
   margin: 0 auto;
 }
 
@@ -87,9 +87,12 @@
   margin-top: 8px;
 }
 
-
 .vertical-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -99,20 +102,18 @@
   padding: 0;
 }
 
-.iconSDP ~ .iconSDP {
+.iconSDP~.iconSDP {
   margin-top: 40px;
 }
 
 @media screen and (min-width: 768px) {
-  .iconSDP ~ .iconSDP {
+  .iconSDP~.iconSDP {
     border-left: 0;
     margin-top: 0;
   }
-
   .iconSDP img {
     width: 100px;
   }
-
   .iconSDP strong {
     letter-spacing: 4px;
     font-size: 18px;
@@ -123,12 +124,12 @@
   .iconSDP img {
     width: 125px;
   }
-
   .iconSDP strong {
     letter-spacing: 6.5px;
     font-size: 20px;
   }
 }
+
 
 /* FOURTH SECTION */
 
@@ -138,12 +139,13 @@
 
 .sec-4-left p {
   width: 90%;
-  margin: -50px auto 0 auto;;
+  margin: -50px auto 0 auto;
+  ;
   background-color: white;
   padding: 30px;
 }
 
-.sec-4-right img{
+.sec-4-right img {
   z-index: 2;
   width: 100%;
 }
@@ -153,11 +155,9 @@
     padding-top: 40px;
     padding-right: 0;
   }
-
   .sec-4-right {
     padding-left: 0;
   }
-
   .sec-4-left p {
     width: 100%;
     margin: 1em 0 0 0;
@@ -171,18 +171,20 @@
     padding-top: 90px;
     padding-right: 0;
   }
-
   .sec-4-left p:nth-child(2) {
     float: right;
     width: 66%;
   }
 }
 
+
 /* FOOTER */
+
 footer {
   margin-top: -450px;
   height: 720px;
-  background-color: #e3daef; /* Fallback */
+  background-color: #e3daef;
+  /* Fallback */
   background: -webkit-linear-gradient(#e3daef, #fff);
   background: linear-gradient(#e3daef, #fff);
 }
@@ -196,7 +198,6 @@ footer {
   footer {
     margin-top: -100px;
   }
-
   .footer-text {
     margin-top: 400px;
     margin-bottom: 0;
@@ -207,9 +208,7 @@ footer {
   footer {
     margin-top: -190px;
   }
-
   .footer-text {
     margin-top: 490px;
   }
-
 }
