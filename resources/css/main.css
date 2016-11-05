@@ -134,9 +134,12 @@ a, a:hover, a:visited, a:active {
   color: #fbdb0c;
 }
 
+.dropdown-row {
+  padding: 0 30px;
+}
+
 .dropdown {
   width: 100%;
-  padding: 0 15px;
   max-width: 500px;
   margin: 30px auto -30px auto;
 }
