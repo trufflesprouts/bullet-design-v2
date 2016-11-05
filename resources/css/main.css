@@ -1,102 +1,154 @@
 /* FONTS */
-@font-face {
-    font-family: 'Clearface T.';
-    src: url('../fonts/clearface_t.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
 
 @font-face {
-    font-family: 'Clearface T.';
-    src: url('../fonts/clearface_heavy_t.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'Clearface T.';
+  src: url('../fonts/clearface_t.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Clearface T.';
-    src: url('../fonts/clearface_black_t.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
+  font-family: 'Clearface T.';
+  src: url('../fonts/clearface_heavy_t.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Futura LT';
-    src: url('../fonts/futuralt_book.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Clearface T.';
+  src: url('../fonts/clearface_black_t.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Futura LT';
-    src: url('../fonts/futuralt_bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Futura LT';
+  src: url('../fonts/futuralt_book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura LT';
+  src: url('../fonts/futuralt_bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
 
-* {
-    font-family: 'Futura LT', "Trebuchet MS", Helvetica, sans-serif;
-    font-weight: normal;
+h1 {
+  font-family: 'Clearface T.', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 1.1em;
+  margin: 0;
 }
 
+p, a, li, button {
+  font-size: 17px;
+  line-height: 1.3em;
+  font-family: 'Futura LT', "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: normal;
+  letter-spacing: 0px;
+  margin: 1em 0 0 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.highlight {
+  background-color: #13F87F;
+  box-shadow: inset 0 13px 0  #fff, inset 0 -10px 0  #fff;;
+
+}
+
+.remove-xs {
+  display: none;
+}
+
+.hyphenate {
+  text-align: justify !important;
+}
+
+@media screen and (min-width: 768px) {
+  .highlight {
+    box-shadow: inset 0 20px 0  #fff, inset 0 -18px 0  #fff;;
+
+  }
+  h1 {
+    font-size: 60px;
+    line-height: 1.1em;
+  }
+  .remove-xs {
+    display: block;
+  }
+}
+
+.row {
+  padding: 0 15px;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
 
 /*   HEADER   */
 
 header {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    padding-right: 0;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 header img {
-    height: 45px;
-    width: 133.3px;
+  height: 45px;
+  width: auto;
 }
 
-
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 11px;
-    
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navBtn {
-    display: inline-block;
-    margin-left: 40px;
-    
+  display: inline-block;
+  margin-left: 40px;
 }
-
 
 .navBtn a {
-    font-size: 1.3em;
-    color: black;
+  color: black;
 }
 
-
-a,
-a:hover,
-a:visited,
-a:active {
-    text-decoration: none !important;
+a, a:hover, a:visited, a:active {
+  text-decoration: none !important;
 }
 
 .navBtn a:hover {
-    color: #fbdb0c;
+  color: #fbdb0c;
 }
 
 .dropdown {
-    width: 70%;
-    margin: 30px auto -30px auto;
+  width: 70%;
+  margin: 30px auto -30px auto;
 }
 
 header button {
-    background-color:  #ffd9a6;
-    width: 100%;
+  background-color: #ffd9a6;
+  width: 100%;
 }
 
 header .dropdown-menu {
-    width: 100%;
+  width: 100%;
+}
+
+header .dropdown-menu a {
+  margin: 0;
+  margin-bottom: 15px;
 }
