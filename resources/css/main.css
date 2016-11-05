@@ -135,7 +135,9 @@ a, a:hover, a:visited, a:active {
 }
 
 .dropdown {
-  width: 70%;
+  width: 100%;
+  padding: 0 15px;
+  max-width: 500px;
   margin: 30px auto -30px auto;
 }
 
