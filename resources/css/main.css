@@ -140,7 +140,7 @@ a, a:hover, a:visited, a:active {
 
 .dropdown {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   margin: 30px auto -30px auto;
 }
 
@@ -151,6 +151,8 @@ header button {
 
 header .dropdown-menu {
   width: 100%;
+  -webkit-transform: translateZ(10px);
+  transform: translateZ(10px);
 }
 
 header .dropdown-menu a {

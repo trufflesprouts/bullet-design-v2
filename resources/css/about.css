@@ -19,7 +19,7 @@ section {
 }
 
 .aboutUs-text {
-  margin: 100px 0;
+  margin: 30px 0;
 }
 
 .aboutUs-text h1 {
@@ -32,12 +32,9 @@ section {
   margin-top: 25px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .aboutUs-text {
-    margin: 50px 40px;
-  }
-  .aboutUs-text h2 {
-    font-size: 2.5em;
+    margin: 100px 0;
   }
   .aboutUs-text p {
     margin-top: 20px;
