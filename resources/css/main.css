@@ -144,9 +144,14 @@ a, a:hover, a:visited, a:active {
   margin: 30px auto -30px auto;
 }
 
+
 header button {
   background-color: #ffd9a6;
   width: 100%;
+}
+
+button:focus {
+    outline:0 !important;
 }
 
 header .dropdown-menu {
