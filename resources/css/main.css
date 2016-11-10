@@ -57,8 +57,8 @@ strong {
 }
 
 .highlight {
-  background-color: #13F87F;
-  box-shadow: inset 0 13px 0 #fff, inset 0 -10px 0 #fff;
+  background: -webkit-linear-gradient(#fff 30%, #13F87F 30%, #13F87F 70%, #fff 70%);
+  background: linear-gradient(#fff 30%, #13F87F 30%, #13F87F 70%, #fff 70%);
 }
 
 .remove-xs {
@@ -70,9 +70,6 @@ strong {
 }
 
 @media screen and (min-width: 768px) {
-  .highlight {
-    box-shadow: inset 0 20px 0 #fff, inset 0 -18px 0 #fff;
-  }
   h1 {
     font-size: 60px;
     line-height: 1.1em;
